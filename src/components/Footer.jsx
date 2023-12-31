@@ -126,7 +126,7 @@ const Footer = () => {
           <div className="bg-primary text-white p-3 rounded-full">
             <AiFillHeart className="w-7 h-auto" />
           </div>
-          <p className="font-bold italic text-dark-light">Copyright © 2024. Raghav with love.</p>
+          <p className="font-bold italic text-dark-light">Copyright © 2024. Raghav.</p>
         </div>
       </footer>
     </section>

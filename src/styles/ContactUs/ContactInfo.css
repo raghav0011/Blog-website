@@ -1,0 +1,20 @@
+.contact_info{
+    display: flex;
+    gap:100px;
+    text-align: center;
+    justify-content: center;
+    padding: 5em 0em 10em 0;
+}
+
+@media (max-width: 780px){
+    .contact_info{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 680px){
+    .contact_info{
+        flex-direction: column;
+        gap: 100px;
+    }
+}

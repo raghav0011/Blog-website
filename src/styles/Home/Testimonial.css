@@ -1,0 +1,140 @@
+.testimonial_container {
+  padding: 50px 0;
+  height: 581px;
+}
+
+.testimonial_head_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.testimonial_head_title {
+  font-size: 33.27px;
+  width: 15em;
+  font-weight: bold;
+  color: #3d3d3d;
+  text-align: center;
+}
+
+.testimonial_client_info {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonial_content {
+  width: 1485px;
+  margin: auto;
+  padding: 0 12em;
+}
+
+@media (max-width: 1485px) {
+  .testimonial_content {
+    width: 1200px;
+    margin: auto;
+    padding: 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .testimonial_content {
+    width: 1100px;
+    margin: auto;
+  }
+
+  .testimonial_client_info {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .testimonial_content {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .testimonial_client_info {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .testimonial_content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .testimonial_client_info {
+    gap: 0;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    left: 16em;
+  }
+}
+
+@media (max-width: 900px) {
+  .swiper-slide {
+    left: 14em;
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper-slide {
+    left: 10em;
+  }
+}
+
+@media (max-width: 700px) {
+  .swiper-slide {
+    left: 7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-slide {
+    left: 0em;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    left: 0em;
+  }
+
+  .testimonial_head_title{
+    width: 300px;
+  }
+
+  .testimonial_client_info{
+    flex-direction: column;
+  }
+
+  .testimonial_review_head{
+    align-items: flex-start;
+  }
+  .testimonial_review_card{
+    height: 17em;
+  }
+}
+
+@media (max-width: 325px) {
+  .swiper-slide {
+    left: 0em;
+  }
+
+  .testimonial_head_title{
+    width: 300px;
+  }
+
+  .testimonial_client_info{
+    flex-direction: column;
+  }
+
+  .testimonial_review_head{
+    align-items: flex-start;
+    width: 200px;
+  }
+}

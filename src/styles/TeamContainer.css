@@ -1,0 +1,126 @@
+.team-container__col {
+  flex: 0 0 100%; /* Full width on small screens */
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.team-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.team-one__img {
+    background-color: #0f0d1d;
+}
+
+.team-one__img {
+    position: relative;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.team-one__img:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    /* background-color: rgba(var(--thm-primary-rgb), .90); */
+    background-color: #01c4c3ba;
+    transform: translateY(100%);
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.team-one__img > img {
+    width: 100%;
+    /* mix-blend-mode: luminosity; */
+}
+
+.team-one__hover-content {
+    position: absolute;
+    top: 43px;
+    left: 50px;
+    transform: translateX(-160%);
+    transition: all 900ms ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.team-one__name {
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.team-one__title {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.team-one__bottom {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 50px;
+    z-index: 2;
+    transform: translateY(280%);
+    transition: all 500ms ease;
+}
+
+.team-one__btn {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: inline-block;
+    transition: all 500ms ease;
+}
+
+.team-one__single:hover .team-one__img:before {
+    transform: translateY(0);
+}
+
+.team-one__single:hover .team-one__hover-content {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.team-one__single:hover .team-one__bottom {
+    transform: translateY(0%);
+}
+
+.team-one__btn:hover {
+    color: var(--thm-base);
+}
+
+.team-one__btn:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    content: "";
+    transition: width 500ms ease;
+    background-color: currentColor;
+}
+
+.team-one__btn:hover:before {
+    width: 100%;
+}

@@ -1,0 +1,140 @@
+.message-box {
+  position: relative;
+  display: block;
+  padding: 0px 0 120px;
+  font-family: "Jost", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-title {
+  margin-top: -12px;
+  margin-bottom: 50px;
+}
+
+.message-box__social {
+  display: flex;
+  align-items: center;
+}
+
+.message-box__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8f8da0;
+  font-size: 17px;
+  transition: all 500ms ease;
+}
+
+.message-box__social a + a {
+  margin-left: 25px;
+}
+
+.comment-form__input-box {
+  position: relative;
+  display: block;
+}
+
+.comment-form__input-box input[type="text"],
+.comment-form__input-box input[type="email"] {
+  height: 70px;
+  width: 100%;
+  border: none;
+  background: #f2f4f8;
+  padding-left: 30px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+  outline: none;
+  font-size: 14px;
+  color: #726f84;
+  font-weight: 500;
+  display: block;
+}
+
+.comment-form__input-box textarea {
+  font-size: 14px;
+  color: #726f84;
+  height: 140px;
+  width: 100%;
+  background: #f2f4f8;
+  padding: 20px 30px 30px;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.comment-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1030px) {
+  .contact_form_main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .message-box__right {
+    width: 35em;
+  }
+}
+
+@media (max-width: 580px) {
+  .message-box__right {
+    width: 510px;
+  }
+
+  .contact_form_main_info{
+    width: 510px
+  }
+}
+
+@media (max-width: 530px) {
+  .message-box__right {
+    width: 410px;
+  }
+
+  .contact_form_main_info{
+    width: 410px
+  }
+}
+
+@media (max-width: 430px) {
+  .message-box__right {
+    width: 350px;
+  }
+
+  .contact_form_main_info{
+    width: 350px
+  }
+}
+
+@media (max-width: 366px) {
+  .message-box__right {
+    width: 280px;
+  }
+
+  .contact_form_main_info{
+    width: 300px
+  }
+}
+
+@media (max-width: 340px) {
+  .contact_form_main_head{
+    font-size: 43px
+  }
+  .contact_form_main_info{
+    width: 280px
+  }
+}

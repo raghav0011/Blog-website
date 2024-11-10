@@ -1,0 +1,36 @@
+.page_header {
+  position: relative;
+  display: block;
+  padding: 150px 0 139px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0f0d1d;
+}
+
+.page_image_overlay {
+  background-size: cover;
+  background-color: #0f0d1d;
+  background-blend-mode: luminosity;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page_header_content {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: start;
+ z-index: 3;
+}
+
+.page_header_main_name {
+  font-size: 50px !important;
+  font-weight: bold !important;
+  color: white;
+}
